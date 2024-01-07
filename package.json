@@ -47,9 +47,11 @@
     "node": "*"
   },
   "scripts": {
+    "compile": "google-closure-compiler -O ADVANCED --js fraction.js --js_output_file fraction.min.js",
     "test": "mocha tests/*.js"
   },
   "devDependencies": {
+    "google-closure-compiler": "^20230802.0.0",
     "mocha": "*"
   }
 }
